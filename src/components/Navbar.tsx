@@ -14,7 +14,7 @@ export default function Navbar() {
         {/* Logo da empresa */}
         <div className="flex items-center">
           <Image src={Logo} alt="Logo da Empresa" className="h-14 w-auto" />
-          <h3 className="ml-2">Hive.Connect</h3>
+          <span className="ml-2 text-2xl">Hive.Connect</span>
         </div>
 
         {/* Botão de menu hamburguer para mobile */}
@@ -27,9 +27,15 @@ export default function Navbar() {
 
         {/* Links de navegação - visíveis apenas no desktop */}
         <div className="hidden md:flex space-x-8">
-          <Link href="/" className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text"> Home </Link>
-          <Link href="/quem-somos" className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text"> Quem Somos </Link>
-          <Link href="/contato" className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text"> Contato </Link>
+          <Link href="/" className="text-lg hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text">
+            Home
+          </Link>
+          <Link href="/quem-somos" className="text-lg hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text">
+            Quem Somos
+          </Link>
+          <Link href="/contato" className="text-lg hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text">
+            Contato
+          </Link>
         </div>
       </div>
 
@@ -37,9 +43,15 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link href="/" className=" hover:text-blue-500 block"> Home </Link>
-            <Link href="/quem-somos" className=" hover:text-blue-500 block"> Quem Somos </Link>
-            <Link href="/contato" className=" hover:text-blue-500 block"> Contato </Link>
+            <Link href="/" className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text block">
+              Home
+            </Link>
+            <Link href="/quem-somos" className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text block">
+              Quem Somos
+            </Link>
+            <Link href="/contato" className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text block">
+              Contato
+            </Link>
           </div>
         </div>
       )}
