@@ -12,9 +12,9 @@ const SVGComponent: React.FC<SVGComponentProps> = (props) => (
   >
     <defs>
       <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style={{ stopColor: '#5df0ff', stopOpacity: 1 }} />
-        <stop offset="50%" style={{ stopColor: '#b766cf', stopOpacity: 1 }} />
-        <stop offset="100%" style={{ stopColor: '#ff66c4', stopOpacity: 1 }} />
+        <stop offset="0%" style={{ stopColor: '#5df0ff', stopOpacity: 0.6 }} />
+        <stop offset="50%" style={{ stopColor: '#b766cf', stopOpacity: 0.6 }} />
+        <stop offset="100%" style={{ stopColor: '#ff66c4', stopOpacity: 0.6 }} />
       </linearGradient>
     </defs>
     <path
