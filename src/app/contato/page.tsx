@@ -70,7 +70,7 @@ export default function Contato() {
         {errors.mensagem && <p className="text-red-500 text-sm mt-1">{errors.mensagem.message}</p>}
       </div>
 
-      <button type="submit" className="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">
+      <button type="submit" className="w-full bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-white font-bold py-2 px-4 rounded">
         Enviar
       </button>
     </form>
