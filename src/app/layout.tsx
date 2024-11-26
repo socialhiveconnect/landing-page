@@ -1,6 +1,5 @@
 import "./styles/globals.css";
 import type { Metadata } from "next";
-import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
   title: "Hive.Connect",
@@ -11,8 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR">
       <head></head>
-      <body className='bg-gray-800 text-white'>
-        <Navbar />
+      <body className='bg-gray-800 text-white w-full'>
         <main>{children}</main>
       </body>
     </html>
