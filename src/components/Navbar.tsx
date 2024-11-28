@@ -43,6 +43,12 @@ export default function Navbar() {
               Quem Somos
             </a>
             <a
+              href="#publico-alvo"
+              className="text-lg hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text"
+            >
+              Público-Alvo
+            </a>
+            <a
               href="#contato"
               className="text-lg hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text"
             >
@@ -60,6 +66,12 @@ export default function Navbar() {
                 className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text block"
               >
                 Quem Somos
+              </a>
+              <a
+                href="#publico-alvo"
+                className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text block"
+              >
+                Público-Alvo
               </a>
               <a
                 href="#contato"

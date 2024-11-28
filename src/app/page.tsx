@@ -1,6 +1,12 @@
 "use client";
 import Colmeia from '@/components/Colmeia';
+import CustomCard from '@/components/CustomCard';
 import Navbar from '@/components/Navbar';
+
+import imagem_estudante from '@/../public/estudante_ti.png';
+import imagem_inicio_de_carreira from '@/../public/inicio_de_carreira.png';
+import imagem_experiente from '@/../public/experiente.png';
+import imagem_entusiastas from '@/../public/entusiastas.png';
 
 export default function Home() {
   return (
@@ -9,7 +15,7 @@ export default function Home() {
       <div className="absolute top-60 left-20 -translate-x-1/2 -translate-y-1/2 z-0">
         <Colmeia treeLevels={[6, 5, 4, 3]} />
       </div>
-      <div className="relative container mx-auto px-8 pt-10 text-center h-[60vh] flex flex-col justify-center items-center">
+      <section className="relative container mx-auto px-8 pt-10 text-center h-[60vh] flex flex-col justify-center items-center">
         <h2
           id="subtitle"
           className="relative z-10 text-4xl font-semibold mb-6 text-gray-100 drop-shadow-2xl text-outline sm:mt-16 sm:text-3xl"
@@ -22,8 +28,8 @@ export default function Home() {
         >
           Hive Connect
         </h1>
-      </div>
-      <div
+      </section>
+      <section
         id="quem-somos"
         className="relative bg-white mx-auto px-8 py-10 scroll-mt-20"
       >
@@ -69,7 +75,20 @@ export default function Home() {
             impulsionar o crescimento mútuo e o aprendizado contínuo;
           </span>
         </p>
-      </div>
+      </section>
+      <section
+        id="publico-alvo"
+        className="relative bg-opacity-80 bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 mx-auto px-8 py-10 scroll-mt-20 xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
+        <h2 className="text-white text-5xl text-center py-4 uppercase font-bold mb-5 sm:text-3xl">
+          público-alvo
+        </h2>
+        <div className='flex flex-1 flex-wrap justify-around gap-10'>
+          <CustomCard image={imagem_estudante} title='Estudantes de TI' />
+          <CustomCard image={imagem_inicio_de_carreira} title='Profissionais em início de carreira' />
+          <CustomCard image={imagem_experiente} title='Profissionais experientes' />
+          <CustomCard image={imagem_entusiastas} title='Entusiastas de tecnologia' />
+        </div>
+      </section>
     </div>
   );
 }
