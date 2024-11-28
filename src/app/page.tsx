@@ -78,7 +78,8 @@ export default function Home() {
       </section>
       <section
         id="publico-alvo"
-        className="relative bg-opacity-80 bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 mx-auto px-8 py-10 scroll-mt-20 xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
+        className="relative bg-opacity-80 bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 mx-auto px-8 py-10 scroll-mt-20 xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl"
+      >
         <h2 className="text-white text-5xl text-center py-4 uppercase font-bold mb-5 sm:text-3xl">
           público-alvo
         </h2>
@@ -91,7 +92,8 @@ export default function Home() {
       </section>
       <section
         id="trilha-de-carreiras"
-        className="relative mx-auto px-8 py-10 scroll-mt-20 xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
+        className="relative mx-auto px-8 py-10 scroll-mt-20 xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl"
+      >
         <h2 className="text-white text-5xl text-center py-4 uppercase font-bold mb-5 sm:text-3xl">
           trilha de carreiras
         </h2>
@@ -107,6 +109,44 @@ export default function Home() {
           seguindo esse roadmap e o cronograma
           que vamos montar.
         </p>
+      </section>
+      <section
+        id="trabalho-voluntario"
+        className="relative bg-white mx-auto px-8 py-10 scroll-mt-20 xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl"
+      >
+        <h2 className=" text-5xl text-center py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
+          trabalho voluntário
+        </h2>
+        <div className="flex flex-wrap flex-col sm:flex-row gap-[2%]">
+          <div className="xl:w-[49%] lg:w-[49%] md:w-[49%] sm:w-[100%]">
+            <p className="text-4xl text-left py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
+              fundadores:
+            </p>
+            <span className="text-4xl text-left sm:text-2xl text-gray-950">
+              Criadores do projetos que também administram conteúdos, redes sociais e o Discord.
+            </span>
+            <p className="text-4xl text-left py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
+              Moderadores:
+            </p>
+            <span className="text-4xl text-left sm:text-2xl text-gray-950">
+              Membros ativos que ajudam a manter o ambiente seguro e ajudam a fomentar conversas entre membros.
+            </span>
+            <p className="text-4xl text-left py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
+              Mentores:
+            </p>
+            <span className="text-4xl text-left sm:text-2xl text-gray-950">
+              Voluntários que orientam iniciantes e migrantes de carreira na área de tecnologia.
+            </span>
+          </div>
+          <div className="xl:w-[49%] lg:w-[49%] md:w-[49%] sm:w-[100%]">
+            <p className="text-4xl text-left py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
+              transformando a comunidade juntos
+            </p>
+            <span className="text-4xl text-left sm:text-2xl text-gray-950">
+              Acreditamos que uma comunidade forte e acolhedora é construída com a colaboração de todos. Os fundadores se dedicam a manter conteúdos de qualidade e supervisionar o Discord e as redes sociais, enquanto membros engajados através de um sistema de pontuação podem tornar-se moderadores e ajudar a criar um ambiente seguro e harmonioso. Também incentivamos voluntários que desejem ser mentores, apoiando quem está iniciando ou migrando de carreira. Com cada contribuição, construímos juntos um ecossistema de apoio, aprendizado e inspiração.
+            </span>
+          </div>
+        </div>
       </section>
     </div>
   );

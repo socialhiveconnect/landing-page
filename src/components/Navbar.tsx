@@ -55,10 +55,10 @@ export default function Navbar() {
               Trilha de Carreiras
             </a>
             <a
-              href="#contato"
+              href="#trabalho-voluntario"
               className="text-lg hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text"
             >
-              Contato
+              Trabalho Voluntário
             </a>
           </div>
         </div>
@@ -86,10 +86,10 @@ export default function Navbar() {
                 Trilha de Carreiras
               </a>
               <a
-                href="#contato"
+                href="#trabalho-voluntario"
                 className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text block"
               >
-                Contato
+                Trabalho Voluntário
               </a>
             </div>
           </div>
