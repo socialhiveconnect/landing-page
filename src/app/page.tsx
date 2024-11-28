@@ -33,20 +33,20 @@ export default function Home() {
         id="quem-somos"
         className="relative bg-white mx-auto px-8 py-10 scroll-mt-20"
       >
-        <h2 className="quem-somos-title text-5xl text-center py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
+        <h2 className=" text-5xl text-center py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
           visão geral
         </h2>
-        <p className="quem-somos-text text-gray-900 text-4xl text-center xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
+        <p className=" text-gray-900 text-4xl text-center xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
           Somos uma comunidade onde pessoas de diversas áreas da tecnologia e em
           diversos momentos de carreira para que possam se conectar, conversar
           e trocar conhecimentos. Queremos ajudar as pessoas a se encontrarem
           dentro de uma profissão de TI, ou até mesmo mudar de área dentro de
           tecnologia, ou ajudar o próximo repassando seu conhecimento.
         </p>
-        <h2 className="quem-somos-title text-5xl text-center py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
+        <h2 className=" text-5xl text-center py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
           qual o problema?
         </h2>
-        <p className="quem-somos-text text-gray-900 text-4xl text-center xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
+        <p className=" text-gray-900 text-4xl text-center xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
           Atualmente a cidade de Curitiba se mostra um tanto carente quando o
           assunto é comunidade e eventos de tecnologia. Percebemos essa
           necessidade tanto entre os profissionais do mercado de TI, quanto
@@ -56,10 +56,10 @@ export default function Home() {
           que dificulta a formação de amizades e um networking mais natural e
           descontraído.
         </p>
-        <h2 className="quem-somos-title text-5xl text-center py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
+        <h2 className="text-5xl text-center py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
           o que é uma comunidade?
         </h2>
-        <p className="quem-somos-text text-gray-900 text-4xl text-center xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
+        <p className=" text-gray-900 text-4xl text-center xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
           <span>
             Um espaço de convergência onde indivíduos buscam compartilhar e
             enriquecer conhecimentos;
@@ -88,6 +88,25 @@ export default function Home() {
           <CustomCard image={imagem_experiente} title='Profissionais experientes' />
           <CustomCard image={imagem_entusiastas} title='Entusiastas de tecnologia' />
         </div>
+      </section>
+      <section
+        id="trilha-de-carreiras"
+        className="relative mx-auto px-8 py-10 scroll-mt-20 xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
+        <h2 className="text-white text-5xl text-center py-4 uppercase font-bold mb-5 sm:text-3xl">
+          trilha de carreiras
+        </h2>
+        <p className=" text-white text-4xl text-center xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
+          Em nosso GitHub, faremos trilhas de
+          carreira. Cada carreira terá uma página.
+          Nessa página, haverá as carreiras dentro
+          das áreas (exemplo: DADOS - Analista de
+          Dados, Data Engineer, etc.). Cada uma terá
+          o perfil necessário para o profissional, seu
+          roadmap e uma sequência de cursos para
+          que ele se torne um bom profissional,
+          seguindo esse roadmap e o cronograma
+          que vamos montar.
+        </p>
       </section>
     </div>
   );
