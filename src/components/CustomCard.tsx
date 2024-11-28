@@ -16,7 +16,7 @@ export default function CustomCard({ image, title }: cardProps) {
     <Card className='w-[300px]'>
       <CardHeader />
       <CardContent>
-        <Image src={image} alt='teste' />
+        <Image src={image} alt={title} />
       </CardContent>
       <CardFooter>
         {title}
