@@ -7,6 +7,7 @@ import imagem_estudante from '@/../public/estudante_ti.png';
 import imagem_inicio_de_carreira from '@/../public/inicio_de_carreira.png';
 import imagem_experiente from '@/../public/experiente.png';
 import imagem_entusiastas from '@/../public/entusiastas.png';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -148,6 +149,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

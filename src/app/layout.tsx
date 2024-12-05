@@ -9,7 +9,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <head></head>
+      <head>
+        <link rel="icon" href="../../hive.png" />
+      </head>
       <body className='bg-gray-800 text-white w-full'>
         <main>{children}</main>
       </body>
