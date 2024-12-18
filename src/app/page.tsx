@@ -29,6 +29,12 @@ export default function Home() {
         >
           Hive Connect
         </h1>
+        <button
+          className="relative z-10 mt-6 px-6 py-3 bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-white font-bold rounded-lg shadow-lg hover:opacity-90 transition-opacity"
+          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfha_R-8Q9ultiFG2WI3ZoqZtEa-J7e0XpUaR_MZMYZGANW1w/viewform', '_blank')}
+        >
+          Faça parte de nossa comunidade
+        </button>
       </section>
       <section
         id="quem-somos"
