@@ -49,16 +49,16 @@ export default function Navbar() {
               Público-Alvo
             </a>
             <a
-              href="#trilha-de-carreiras"
-              className="text-lg hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text"
-            >
-              Trilha de Carreiras
-            </a>
-            <a
               href="#trabalho-voluntario"
               className="text-lg hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text"
             >
               Trabalho Voluntário
+            </a>
+            <a
+              href="#trilha-de-carreiras"
+              className="text-lg hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text"
+            >
+              Trilha de Carreiras
             </a>
           </div>
         </div>
@@ -80,16 +80,16 @@ export default function Navbar() {
                 Público-Alvo
               </a>
               <a
-                href="#trilha-de-carreiras"
-                className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text block"
-              >
-                Trilha de Carreiras
-              </a>
-              <a
                 href="#trabalho-voluntario"
                 className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text block"
               >
                 Trabalho Voluntário
+              </a>
+              <a
+                href="#trilha-de-carreiras"
+                className="hover:bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 hover:text-transparent hover:bg-clip-text block"
+              >
+                Trilha de Carreiras
               </a>
             </div>
           </div>

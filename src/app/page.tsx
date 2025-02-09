@@ -98,26 +98,6 @@ export default function Home() {
         </div>
       </section>
       <section
-        id="trilha-de-carreiras"
-        className="relative mx-auto px-8 py-10 scroll-mt-20 xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl"
-      >
-        <h2 className="text-white text-5xl text-center py-4 uppercase font-bold mb-5 sm:text-3xl">
-          trilha de carreiras
-        </h2>
-        <p className=" text-white text-4xl text-center xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
-          Em nosso GitHub, faremos trilhas de
-          carreira. Cada carreira terá uma página.
-          Nessa página, haverá as carreiras dentro
-          das áreas (exemplo: DADOS - Analista de
-          Dados, Data Engineer, etc.). Cada uma terá
-          o perfil necessário para o profissional, seu
-          roadmap e uma sequência de cursos para
-          que ele se torne um bom profissional,
-          seguindo esse roadmap e o cronograma
-          que vamos montar.
-        </p>
-      </section>
-      <section
         id="trabalho-voluntario"
         className="relative bg-white mx-auto px-8 py-10 scroll-mt-20 xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl"
       >
@@ -154,6 +134,26 @@ export default function Home() {
             </span>
           </div>
         </div>
+      </section>
+      <section
+        id="trilha-de-carreiras"
+        className="relative mx-auto px-8 py-10 scroll-mt-20 xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl"
+      >
+        <h2 className="text-white text-5xl text-center py-4 uppercase font-bold mb-5 sm:text-3xl">
+          trilha de carreiras
+        </h2>
+        <p className=" text-white text-4xl text-center xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
+          Em nosso GitHub, faremos trilhas de
+          carreira. Cada carreira terá uma página.
+          Nessa página, haverá as carreiras dentro
+          das áreas (exemplo: DADOS - Analista de
+          Dados, Data Engineer, etc.). Cada uma terá
+          o perfil necessário para o profissional, seu
+          roadmap e uma sequência de cursos para
+          que ele se torne um bom profissional,
+          seguindo esse roadmap e o cronograma
+          que vamos montar.
+        </p>
       </section>
       <Footer />
     </div>
