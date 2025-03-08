@@ -54,14 +54,13 @@ export default function Home() {
           qual o problema?
         </h2>
         <p className=" text-gray-900 text-4xl text-center xl:px-60 lg:px-32 md:px-12 sm:px-4 pb-8 sm:text-2xl">
-          Atualmente a cidade de Curitiba se mostra um tanto carente quando o
-          assunto é comunidade e eventos de tecnologia. Percebemos essa
-          necessidade tanto entre os profissionais do mercado de TI, quanto
-          entre aqueles que desejam ingressar na área. Hoje as oportunidades
-          para networking se limitam, na maioria das vezes ao LinkedIn, que
-          embora seja uma ferramenta essencial, é marcada por uma formalidade
-          que dificulta a formação de amizades e um networking mais natural e
-          descontraído.
+          Percebemos uma grande carência de conteúdos de qualidade e acessíveis 
+          gratuitamente para quem deseja entrar na área de tecnologia ou migrar 
+          de carreira. A Hive.Connect nasceu para mudar essa realidade, oferecendo 
+          trilhas de aprendizado, programas de mentoria, projetos práticos em cada 
+          etapa da jornada, além de consultoria para currículo e LinkedIn. 
+          Nosso objetivo é apoiar e impulsionar talentos, tornando a transição 
+          para o mercado de tecnologia mais acessível e estruturada.
         </p>
         <h2 className="text-5xl text-center py-4 uppercase font-bold bg-gradient-to-r from-customColors-color4 via-customColors-color5 to-customColors-color6 text-transparent bg-clip-text sm:text-3xl">
           o que é uma comunidade?
