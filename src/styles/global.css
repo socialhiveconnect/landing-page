@@ -1,2 +1,30 @@
 @import "tailwindcss";
-@tailwind utilities;
+
+@theme {
+  /* --- CORES --- */
+  --color-primary-dark: #091428;
+  --color-main-text: #e6f5f2;
+  --color-accent-cyan: #00e8ff;
+
+  /* --- FONTES --- */
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-display: "Funnel Display", sans-serif; /* Nova fonte para o título */
+
+  /* --- TAMANHOS DE FONTE --- */
+  --font-size-nav-mobile: 20px;
+  --font-size-display: 35px;
+
+  /* --- BORDER RADIUS --- */
+  --border-radius-menu-item: 10px;
+
+  /* --- ESPESSURA DA BORDA --- */
+  --border-width-menu-item: 2px;
+
+  /* Tamanhos de Fonte */
+  --font-size-heading-lg: 65px;
+  --font-size-body-xl: 20px;
+
+  /* Line Heights (Altura de linha) */
+  --line-height-heading-lg: 81px;
+  --line-height-body-xl: 24px;
+}

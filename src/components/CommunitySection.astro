@@ -1,0 +1,64 @@
+---
+import CommunityIllustration from "./CommunityIllustration.astro";
+---
+
+<section class="container mx-auto px-6 py-16 sm:py-20 lg:py-32">
+  {
+    /*
+    MUDANÇAS APLICADAS:
+    - O breakpoint principal agora é `lg:` (1024px), dando mais espaço para o layout de coluna única.
+    - O `gap` foi ajustado para `gap-y-12` (vertical no mobile) e `lg:gap-x-16` (horizontal no desktop).
+  */
+  }
+  <div
+    class="grid grid-cols-1 lg:grid-cols-2 items-center gap-y-12 lg:gap-x-16"
+  >
+    {/* Coluna 1: Conteúdo de Texto */}
+    {
+      /* No mobile, o texto será centralizado. No desktop (`lg:`), alinhado à esquerda. */
+    }
+    <div class="text-center lg:text-left">
+      <h1
+        class="font-display font-bold text-accent-cyan
+        leading-tight
+        
+        /* MUDANÇA: Escada de tamanhos de fonte para uma transição suave */
+        text-4xl sm:text-5xl lg:text-heading-lg lg:leading-[81px]
+        
+        mb-8"
+      >
+        Uma comunidade para unir todos
+      </h1>
+
+      {
+        /* MUDANÇA: Parágrafos com um tamanho de fonte base menor e mais legível no mobile */
+      }
+      <div
+        class="font-montserrat font-bold text-main-text
+        space-y-4 text-base sm:text-lg lg:text-body-xl
+        leading-relaxed lg:leading-normal"
+      >
+        <p>
+          A Hive.connect é uma comunidade gratuita focada no crescimento
+          profissional, oferecendo trilhas de aprendizado e orientação de
+          carreira para quem busca evoluir.
+        </p>
+        <p>
+          Aqui, você encontra apoio, conteúdos de qualidade e a chance de se
+          conectar com pessoas que compartilham o mesmo objetivo: alcançar o
+          sucesso.
+        </p>
+        <p>
+          Nosso propósito é fornecer ferramentas e suporte para que cada membro
+          tenha a oportunidade de se desenvolver e trilhar seu próprio caminho
+          com confiança.
+        </p>
+      </div>
+    </div>
+
+    {/* Coluna 2: Ilustração */}
+    <div>
+      <CommunityIllustration />
+    </div>
+  </div>
+</section>
