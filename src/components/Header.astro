@@ -1,0 +1,55 @@
+---
+import Logo from "./Logo.astro";
+import MobileMenu from "./MobileMenu.jsx";
+
+const navLinks = [
+  { href: "/trilhas", text: "Trilhas" },
+  { href: "/fale-conosco", text: "Fale conosco" },
+  { href: "/banco-de-talentos", text: "Banco de Talentos" },
+];
+
+const actionButtons = [
+  { href: "/discord", text: "Entrar no servidor do Discord" },
+  { href: "/participar", text: "Quero participar" },
+];
+---
+
+<header class="bg-primary-dark font-montserrat sticky top-0 z-30">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between min-h-[104px]">
+      <div class="flex-shrink-0">
+        <Logo />
+      </div>
+
+      <nav class="hidden md:flex items-center gap-x-12">
+        {
+          navLinks.map((link) => (
+            <a
+              href={link.href}
+              class="
+              font-bold text-nav text-main-text hover:opacity-80
+              transition-opacity
+            "
+            >
+              {link.text}
+            </a>
+          ))
+        }
+      </nav>
+
+      <div class="hidden md:flex items-center gap-x-4">
+        {
+          actionButtons.map((button) => (
+            <a
+              href={button.href}
+              class=" block border border-main-text rounded-full px-8 py-3 font-bold text-nav text-main-text whitespace-nowrap hover:bg-main-text/10 transition-colors"
+            >
+              {button.text}
+            </a>
+          ))
+        }
+      </div>
+      <MobileMenu client:load links={navLinks} buttons={actionButtons} />
+    </div>
+  </div>
+</header>
