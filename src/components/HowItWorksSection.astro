@@ -1,0 +1,41 @@
+---
+import DesktopIllustration from "../assets/how-it-works-desktop.svg?raw";
+import MobileIllustration from "../assets/how-it-works-mobile.svg?raw";
+---
+
+<section
+  class="bg-surface-light text-text-dark py-16 sm:py-20 lg:py-28 overflow-x-hidden"
+>
+  <div class="container mx-auto px-6">
+    <div class="space-y-12">
+      <div
+        class="max-w-2xl mx-auto lg:max-w-3xl lg:mx-0 lg:-translate-x-24 transition-transform duration-300"
+      >
+        <div class="text-center lg:text-left">
+          <h2
+            class="font-display font-bold text-accent-pink text-4xl lg:text-heading-lg lg:leading-[81px] mb-6"
+          >
+            Como funciona?
+          </h2>
+          <p
+            class="font-montserrat text-text-dark
+            text-base lg:text-body-lg lg:leading-[27px]"
+          >
+            A comunidade se propõe conectar pessoas da área de tecnologia,
+            oferecendo trilhas profissionais e roadmaps de carreira. O objetivo
+            é ajudar quem quer entrar ou crescer na área, compartilhando
+            conhecimento, oportunidades e experiências de forma colaborativa.
+          </p>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <div class="hidden md:block max-w-4xl">
+          <Fragment set:html={DesktopIllustration} />
+        </div>
+        <div class="md:hidden max-w-sm">
+          <Fragment set:html={MobileIllustration} />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -5,6 +5,10 @@
   --color-primary-dark: #091428;
   --color-main-text: #e6f5f2;
   --color-accent-cyan: #00e8ff;
+  --color-surface-light: #e6f5f2;
+  --color-text-dark: #1f1f1f;
+  --color-accent-pink: #ff009d;
+  --color-button-primary: #0092ff;
 
   /* --- FONTES --- */
   --font-family-montserrat: "Montserrat", sans-serif;
@@ -23,6 +27,8 @@
   /* Tamanhos de Fonte */
   --font-size-heading-lg: 65px;
   --font-size-body-xl: 20px;
+  --font-size-body-lg: 22px;
+  --line-height-body-lg: 27px;
 
   /* Line Heights (Altura de linha) */
   --line-height-heading-lg: 81px;
