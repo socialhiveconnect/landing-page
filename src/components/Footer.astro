@@ -1,0 +1,52 @@
+---
+import Logo from "../assets/logo.svg?raw";
+import IconInstagram from "../assets/icons/icon-instagram.svg?raw";
+import IconLinkedIn from "../assets/icons/icon-linkedin.svg?raw";
+import IconGithub from "../assets/icons/icon-github.svg?raw";
+
+const socialLinks = [
+  { href: "#", icon: IconInstagram, label: "Instagram" },
+  { href: "#", icon: IconLinkedIn, label: "LinkedIn" },
+  { href: "#", icon: IconGithub, label: "GitHub" },
+];
+---
+
+<footer class="bg-primary-dark text-main-text py-10">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-10 md:gap-4">
+      <div class="text-center md:text-left text-sm space-y-2">
+        <p>code by: André Ramos</p>
+        <p>design by: Leticia Emerim</p>
+      </div>
+
+      <div class="order-first md:order-none flex justify-center">
+        <a href="/" aria-label="Página Inicial">
+          <div class="w-48">
+            <Fragment set:html={Logo} />
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row items-center justify-center md:justify-end gap-4"
+      >
+        <p class="text-sm">Encontre a Hive<br /> nas redes sociais</p>
+
+        <div class="flex items-center gap-x-4">
+          {
+            socialLinks.map((link) => (
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visite nosso ${link.label}`}
+              >
+                <Fragment set:html={link.icon} />
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
