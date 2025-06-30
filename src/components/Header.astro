@@ -2,15 +2,17 @@
 import Logo from "./Logo.astro";
 import MobileMenu from "./MobileMenu.jsx";
 
-const navLinks = [
-  { href: "/trilhas", text: "Trilhas" },
-  { href: "/fale-conosco", text: "Fale conosco" },
-  { href: "/banco-de-talentos", text: "Banco de Talentos" },
-];
-
 const actionButtons = [
-  { href: "/discord", text: "Entrar no servidor do Discord" },
-  { href: "/participar", text: "Quero participar" },
+  {
+    href: "https://discord.gg/fZAmVevD",
+    text: "Entrar no servidor do Discord",
+    isExternal: true,
+  },
+  {
+    href: "https://forms.gle/3Bi1DPwRsVLT4mUD9",
+    text: "Quero participar",
+    isExternal: true,
+  },
 ];
 ---
 
@@ -21,27 +23,12 @@ const actionButtons = [
         <Logo />
       </div>
 
-      <nav class="hidden md:flex items-center gap-x-12">
-        {
-          navLinks.map((link) => (
-            <a
-              href={link.href}
-              class="
-              font-bold text-nav text-main-text hover:opacity-80
-              transition-opacity
-            "
-            >
-              {link.text}
-            </a>
-          ))
-        }
-      </nav>
-
       <div class="hidden md:flex items-center gap-x-4">
         {
           actionButtons.map((button) => (
             <a
               href={button.href}
+              target="_blank"
               class=" block border border-main-text rounded-full px-8 py-3 font-bold text-nav text-main-text whitespace-nowrap hover:bg-main-text/10 transition-colors"
             >
               {button.text}
@@ -49,7 +36,7 @@ const actionButtons = [
           ))
         }
       </div>
-      <MobileMenu client:load links={navLinks} buttons={actionButtons} />
+      <MobileMenu client:load buttons={actionButtons} />
     </div>
   </div>
 </header>

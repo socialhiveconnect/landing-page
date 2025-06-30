@@ -10,7 +10,7 @@ const IconHamburger = () => (
   </div>
 );
 
-export default function MobileMenu({ links, buttons }) {
+export default function MobileMenu({ buttons }) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -47,11 +47,6 @@ export default function MobileMenu({ links, buttons }) {
           </header>
 
           <nav className="flex flex-col gap-y-5 overflow-y-auto">
-            {links.map((link) => (
-              <MenuItem key={link.href} href={link.href}>
-                {link.text}
-              </MenuItem>
-            ))}
             {buttons.map((button) => (
               <MenuItem key={button.href} href={button.href}>
                 {button.text}
