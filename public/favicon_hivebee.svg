@@ -2,9 +2,18 @@
 <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.64 128.26">
   <defs>
     <style>
-      .cls-1 {
-        fill: #e5f5f2;
-      }
+        /* Define a cor padrão (para o modo claro) */
+        .icon-shape {
+            fill: black;
+        }
+
+        /* Usa a media query para detectar o modo escuro */
+        @media (prefers-color-scheme: dark) {
+            /* Altera a cor quando o modo escuro estiver ativo */
+            .icon-shape {
+                fill: white;
+            }
+        }
     </style>
   </defs>
   <g id="LOGOS">
